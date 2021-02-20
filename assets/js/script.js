@@ -36,9 +36,6 @@ document.querySelector('#route-one-challenge-btn').addEventListener('click', fun
     }
 })
 
-
-
-
 function showFirstRouteFauna() {
     document.querySelector('#route-one-fauna').classList.toggle('show');
     document.querySelector('#route-one-fauna-btn').classList.add('route-section-selected')
