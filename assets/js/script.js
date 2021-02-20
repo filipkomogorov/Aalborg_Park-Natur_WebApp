@@ -1,4 +1,13 @@
 
+document.querySelector('#hamburger-menu').addEventListener('click',function(){
+document.querySelector('#nav-menu').classList.toggle('show')
+});
+
+document.querySelector('#hamburger-menu').addEventListener('click',function(){
+    document.querySelector('#hamburger-menu').classList.toggle('X')
+    });
+
+
 
 document.querySelector('#route-one-flora-btn').addEventListener('click', function () {
 
@@ -100,3 +109,4 @@ function showfirstRouteTrails() {
     document.querySelector('#route-one-info-btn').classList.remove('route-section-selected');
     document.querySelector('#route-one-challenge-btn').classList.remove('route-section-selected');
 }
+
