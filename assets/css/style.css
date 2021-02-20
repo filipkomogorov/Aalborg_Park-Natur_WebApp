@@ -17,6 +17,127 @@ img {
     width: 100%;
     height: 30rem;
 }
+/*NAVIGATION*/
+/*NAVIGATION- TOP*/
+.nav-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+    align-items: center;
+    background-color: cyan;
+    position: fixed;
+    z-index: 20;
+    
+}
+.profile {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    width: 2rem;
+    margin-left: 1rem;
+    color: white;
+}
+.fas {
+    font-size: 1.8rem;
+}
+.logo {
+    justify-self: center;
+    grid-column: 2/2;
+    grid-row: 1/1;
+    font-size: 1.4rem;
+    color:white;
+}
+.hamburger-menu {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    justify-self: end;
+    margin-right: 1rem;
+}
+
+/*Hamburger menu*/
+.line {
+    width: 2rem;
+    height: 4px;
+    margin-top: 4px;
+    transition: all .5s ease-in-out;
+    background-color: white;
+
+}
+
+.nav-menu{
+    width: 80%;
+    height: 100%;
+    left:-200%;
+    background-color: lightblue;
+    z-index: 10;
+    position: fixed;
+    transition: all .6s;
+}
+.show {
+    left: 0;
+}
+.nav-menu ul {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-menu li {
+    margin-top: 2rem;
+    list-style: none;
+}
+.nav-menu a {
+    text-decoration: none;
+    font-size: 2rem;
+    color:white;
+    padding: 1rem;
+}
+/*Hamburger-menu animation- not working*/
+
+
+.X .first-line{
+    transform: rotateZ(305deg) translate(0px, 0px);
+}
+.X .second-line{
+    display: none;
+}
+.X .third-line{
+    transform: rotateZ(235deg) translate(7px, 5px);
+}
+/*NAVIGATION-BOTTOM*/
+.nav-bottom {
+position: fixed;
+bottom: 0;
+z-index: 20;
+background-color: cyan;
+width: 100%;
+height: 5rem; 
+}
+.nav-bottom ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.nav-bottom ul li {
+    height: 5rem;
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bottom ul>*:not(:last-child) {
+    border-right: 2px solid #fff;
+}
+.home, .filter, .favourite {
+    color: white;
+    font-size: 2rem;
+}
+
+
+
 
 /* COLLAPSING ELEMENTS */
 
@@ -151,10 +272,4 @@ ROUTES - SHARED CODE FOR ALL PAGES
     width: 100%;
     height: 70rem;
     background-color: white;
-}
-
-.profile {
-    width: 100%;
-    height: 50rem;
-    background-color: blue;
 }
