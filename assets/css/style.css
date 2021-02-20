@@ -3,10 +3,19 @@
     padding: 0;
 }
 
-body {
+html {
+    overflow-x: hidden;
     font-size: 62.5%;
+}
+
+body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 30rem;
 }
 
 /* COLLAPSING ELEMENTS */
@@ -20,7 +29,11 @@ body {
 /* HIDE AND SHOW */
 
 .hide {
-    display: none;
+    display: none !important;
+}
+
+.show {
+    display: block !important;
 }
 
 header {
@@ -33,17 +46,171 @@ main {
     position: relative;
 }
 
+/* ================================
+CODE FOR THE MAIN 'PAGE'
+================================= */
+
 .main-page {
     width: 100%;
-    height: 100rem;
-    background-color: orangered;
 }
 
-.route1 {
+.main-page__route {
     width: 100%;
-    height: 70rem;
-    background-color: black;
+    height: 30rem;
 }
+
+figure {
+    height: 26rem;
+}
+
+figure img {
+    width: 100%;
+    height: 26rem;
+}
+
+figcaption {
+    margin-top: -50px;
+    display: block;
+    color: #000;
+    position: absolute;
+    font-size: 2.6rem;
+    padding: 5px 2rem;
+    background: rgba(255, 255, 255, .7);
+}
+
+/* ================================
+ROUTES - SHARED CODE FOR ALL INDIVIDUAL 'PAGES'
+================================= */
+
+.route__title {
+    width: 32rem;
+    height: 10rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.route__title h1 {
+    font-size: 3rem;
+    line-height: 10rem;
+}
+
+.route__gallery {
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.route__gallery img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+/* route menus */
+
+.route-menu {
+    width: 100%;
+    height: 4rem;
+    background-color: aqua;
+    margin-bottom: 5rem;
+}
+
+.route-menu ul {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: 1fr;
+}
+
+.route-menu ul li {
+    height: 4rem;
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.route-menu ul>*:not(:last-child) {
+    border-right: 2px solid #fff;
+}
+
+/* CHOSEN INFO PROPERTIES*/
+
+.route-section-selected {
+    color: #fff;
+    background-color: #D61C64;
+}
+
+/* INFO SECTION OF ALL ROUTES */
+
+.route__image-marign img {
+    margin: 5rem auto;
+}
+
+.route-text {
+    width: 32rem;
+    margin: 0 auto;
+}
+
+.route-text h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.route-text p {
+    font-size: 1.8rem;
+}
+
+.route-text>*:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.cards {
+    width: 32rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.challenge {
+    width: 14rem;
+    height: 20rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.30), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.challenge-title {
+    width: 100%;
+    height: 3rem
+}
+
+.challenge-title h3 {
+    font-size: 2rem;
+}
+
+.challenge-img {
+    width: 100%;
+    height: 13rem;
+}
+
+.challenge-btn {
+    width: 100%;
+    height: 4rem;
+}
+
+/* route 1 EGHOLM*/
+
+.route-one {
+    width: 100%;
+}
+
+.egholm-run {
+    background-image: url(../image/Egholm/challenge1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* rote 2  */
 
 .route2 {
     width: 100%;
