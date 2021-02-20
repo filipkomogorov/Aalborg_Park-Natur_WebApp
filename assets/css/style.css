@@ -48,11 +48,8 @@ header {
     z-index: 50;
 }
 
-.profile {
-    grid-column: 1/1;
-    width: 2rem;
-    margin-left: 1rem;
-    color: white;
+.profile-icon {
+    color: #fff;
 }
 
 .logo {
@@ -367,10 +364,149 @@ ROUTES - SHARED CODE FOR ALL INDIVIDUAL 'PAGES'
     background-size: cover;
 }
 
-/* rote 2  */
+/* PROFILE PAGE */
 
-.route2 {
+/*PROFILE Picture*/
+
+.profile {
     width: 100%;
-    height: 70rem;
+    margin-bottom: 5rem;
+}
+
+.profile-image {
+    margin-top: 5rem;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    border: 2px solid black;
+    margin-top: 4rem;
+    justify-self: center;
+}
+
+/*PROFILE Routes*/
+
+.profile-picture-routes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    width: 32rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.picture-title {
+    font-size: 1.6rem;
+    grid-row: 1/1;
+    margin: 5rem 0 2rem 0;
+}
+
+.picture-routes {
+    grid-row: 2/2;
+    position: relative;
+}
+
+.picture-routes img {
+    height: 20rem;
+}
+
+.picture-routes-title {
+    position: absolute;
+    bottom: 4rem;
+    left: 1rem;
+    font-size: 1.4rem;
+}
+
+/*Opacity box*/
+
+.picture-routes-inside-text {
+    position: absolute;
+    bottom: 3.3rem;
+    left: rem;
     background-color: white;
+    opacity: 0.5;
+    height: 4rem;
+    width: 10rem;
+}
+
+/*Arrows!*/
+
+.arrow-left {
+    position: absolute;
+    bottom: 9rem;
+    left: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.arrow-right {
+    position: absolute;
+    bottom: 9rem;
+    right: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+/*Picture tripple dots!*/
+
+.dot1 {
+    color: white;
+}
+
+.dots ul {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dots li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/*CHALLENGES*/
+
+.challenges {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    width: 32rem;
+    margin: 0 auto;
+}
+
+.challenges-title {
+    grid-row: 1/1;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.challenges-names ul li {
+    grid-row: 2/2;
+    list-style: none;
+    margin-bottom: 1rem;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/*Profile- bottom-images*/
+
+.bottom-profile-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 32rem;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.bottom-profile-image img {
+    height: 20rem;
 }

@@ -7,6 +7,10 @@ document.querySelector('#hamburger-menu').addEventListener('click', function () 
     document.querySelector('#hamburger-menu').classList.toggle('X')
 });
 
+document.querySelector('#profile-icon').addEventListener('click', function () {
+    document.querySelector('#main-page').classList.add('hide');
+    document.querySelector('#profile').classList.replace('hide', 'show');
+});
 
 
 /* CODE FOR LANDING PAGE*/
@@ -25,6 +29,21 @@ document.querySelector('#ostergadenNord').addEventListener('click', function () 
 document.querySelector('#ostergadenSyd').addEventListener('click', function () {
     document.querySelector('#main-page').classList.add('hide');
     document.querySelector('#ostergadenSyd-ind').classList.replace('hide', 'show')
+})
+
+document.querySelector('#bjergbanestien').addEventListener('click', function () {
+    document.querySelector('#main-page').classList.add('hide');
+    document.querySelector('#bjergbanestien-ind').classList.replace('hide', 'show')
+})
+
+document.querySelector('#mulbjerge').addEventListener('click', function () {
+    document.querySelector('#main-page').classList.add('hide');
+    document.querySelector('#mulbjerge-ind').classList.replace('hide', 'show')
+})
+
+document.querySelector('#poulstrup').addEventListener('click', function () {
+    document.querySelector('#main-page').classList.add('hide');
+    document.querySelector('#poulstrup-ind').classList.replace('hide', 'show')
 })
 
 
@@ -341,3 +360,319 @@ function showThirdRouteTrails() {
     document.querySelector('#route-three-challenge-btn').classList.remove('route-section-selected');
 }
 
+/* CODE FOR INIDIVIDUAL ROUTE FOR bjergbanestien */
+
+
+document.querySelector('#route-four-flora-btn').addEventListener('click', function () {
+
+    if (document.querySelector('#route-four-flora').classList.contains('show')) {
+    } else {
+        showFourthRouteFlora()
+    }
+});
+
+document.querySelector('#route-four-info-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-four-info-btn').classList.contains('route-section-selected')) {
+    } else {
+        showFourthRouteInfo()
+    }
+});
+
+document.querySelector('#route-four-fauna-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-four-fauna').classList.contains('show')) {
+    } else {
+        showFourthRouteFauna();
+    }
+})
+
+document.querySelector('#route-four-trail-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-four-trails').classList.contains('show')) { }
+    else {
+        showFourthRouteTrails()
+    }
+})
+
+document.querySelector('#route-four-challenge-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-four-challenges').classList.contains('show')) {
+    } else {
+        showFourthRouteChallenge()
+    }
+})
+
+function showFourthRouteFauna() {
+    document.querySelector('#route-four-fauna').classList.toggle('show');
+    document.querySelector('#route-four-fauna-btn').classList.add('route-section-selected')
+    document.querySelector('#route-four-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-four-info').classList.replace('show', 'hide')
+    document.querySelector('#route-four-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-four-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-four-info-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-four-flora-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-four-challenge-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-four-trail-btn').classList.remove('route-section-selected')
+}
+
+function showFourthRouteFlora() {
+    document.querySelector('#route-four-flora').classList.add('show');
+    document.querySelector('#route-four-flora-btn').classList.add('route-section-selected');
+    document.querySelector('#route-four-info').classList.replace('show', 'hide')
+    document.querySelector('#route-four-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-four-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-four-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-four-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-four-info-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-four-challenge-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-four-trail-btn').classList.remove('route-section-selected');
+}
+
+function showFourthRouteInfo() {
+    document.querySelector('#route-four-info').classList.add('show');
+    document.querySelector('#route-four-info-btn').classList.add('route-section-selected');
+    document.querySelector('#route-four-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-four-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-four-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-four-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-four-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-four-flora-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-four-challenge-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-four-trail-btn').classList.remove('route-section-selected');
+}
+
+function showFourthRouteChallenge() {
+    document.querySelector('#route-four-challenges').classList.add('show');
+    document.querySelector('#route-four-challenge-btn').classList.add('route-section-selected');
+    document.querySelector('#route-four-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-four-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-four-info').classList.replace('show', 'hide')
+    document.querySelector('#route-four-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-four-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-four-flora-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-four-info-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-four-trail-btn').classList.remove('route-section-selected');
+}
+
+function showFourthRouteTrails() {
+    document.querySelector('#route-four-trails').classList.add('show');
+    document.querySelector('#route-four-trail-btn').classList.add('route-section-selected');
+    document.querySelector('#route-four-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-four-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-four-info').classList.replace('show', 'hide')
+    document.querySelector('#route-four-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-four-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-four-flora-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-four-info-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-four-challenge-btn').classList.remove('route-section-selected');
+}
+
+
+
+/* CODE FOR INIDIVIDUAL ROUTE FOR Mulbjerge */
+
+
+document.querySelector('#route-five-flora-btn').addEventListener('click', function () {
+
+    if (document.querySelector('#route-five-flora').classList.contains('show')) {
+    } else {
+        showFifthRouteFlora()
+    }
+});
+
+document.querySelector('#route-five-info-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-five-info-btn').classList.contains('route-section-selected')) {
+    } else {
+        showFifthRouteInfo()
+    }
+});
+
+document.querySelector('#route-five-fauna-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-five-fauna').classList.contains('show')) {
+    } else {
+        showFifthRouteFauna();
+    }
+})
+
+document.querySelector('#route-five-trail-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-five-trails').classList.contains('show')) { }
+    else {
+        showFifthRouteTrails()
+    }
+})
+
+document.querySelector('#route-five-challenge-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-five-challenges').classList.contains('show')) {
+    } else {
+        showFifthRouteChallenge()
+    }
+})
+
+function showFifthRouteFauna() {
+    document.querySelector('#route-five-fauna').classList.toggle('show');
+    document.querySelector('#route-five-fauna-btn').classList.add('route-section-selected')
+    document.querySelector('#route-five-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-five-info').classList.replace('show', 'hide')
+    document.querySelector('#route-five-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-five-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-five-info-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-five-flora-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-five-challenge-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-five-trail-btn').classList.remove('route-section-selected')
+}
+
+function showFifthRouteFlora() {
+    document.querySelector('#route-five-flora').classList.add('show');
+    document.querySelector('#route-five-flora-btn').classList.add('route-section-selected');
+    document.querySelector('#route-five-info').classList.replace('show', 'hide')
+    document.querySelector('#route-five-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-five-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-five-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-five-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-five-info-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-five-challenge-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-five-trail-btn').classList.remove('route-section-selected');
+}
+
+function showFifthRouteInfo() {
+    document.querySelector('#route-five-info').classList.add('show');
+    document.querySelector('#route-five-info-btn').classList.add('route-section-selected');
+    document.querySelector('#route-five-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-five-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-five-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-five-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-five-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-five-flora-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-five-challenge-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-five-trail-btn').classList.remove('route-section-selected');
+}
+
+function showFifthRouteChallenge() {
+    document.querySelector('#route-five-challenges').classList.add('show');
+    document.querySelector('#route-five-challenge-btn').classList.add('route-section-selected');
+    document.querySelector('#route-five-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-five-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-five-info').classList.replace('show', 'hide')
+    document.querySelector('#route-five-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-five-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-five-flora-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-five-info-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-five-trail-btn').classList.remove('route-section-selected');
+}
+
+function showFifthRouteTrails() {
+    document.querySelector('#route-five-trails').classList.add('show');
+    document.querySelector('#route-five-trail-btn').classList.add('route-section-selected');
+    document.querySelector('#route-five-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-five-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-five-info').classList.replace('show', 'hide')
+    document.querySelector('#route-five-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-five-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-five-flora-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-five-info-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-five-challenge-btn').classList.remove('route-section-selected');
+}
+
+
+
+
+/* CODE FOR INIDIVIDUAL ROUTE FOR Poulstrup */
+
+
+document.querySelector('#route-six-flora-btn').addEventListener('click', function () {
+
+    if (document.querySelector('#route-six-flora').classList.contains('show')) {
+    } else {
+        showSixthRouteFlora()
+    }
+});
+
+document.querySelector('#route-six-info-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-six-info-btn').classList.contains('route-section-selected')) {
+    } else {
+        showSixthRouteInfo()
+    }
+});
+
+document.querySelector('#route-six-fauna-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-six-fauna').classList.contains('show')) {
+    } else {
+        showSixthRouteFauna();
+    }
+})
+
+document.querySelector('#route-six-trail-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-six-trails').classList.contains('show')) { }
+    else {
+        showSixthRouteTrails()
+    }
+})
+
+document.querySelector('#route-six-challenge-btn').addEventListener('click', function () {
+    if (document.querySelector('#route-six-challenges').classList.contains('show')) {
+    } else {
+        showSixthRouteChallenge()
+    }
+})
+
+function showSixthRouteFauna() {
+    document.querySelector('#route-six-fauna').classList.toggle('show');
+    document.querySelector('#route-six-fauna-btn').classList.add('route-section-selected')
+    document.querySelector('#route-six-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-six-info').classList.replace('show', 'hide')
+    document.querySelector('#route-six-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-six-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-six-info-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-six-flora-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-six-challenge-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-six-trail-btn').classList.remove('route-section-selected')
+}
+
+function showSixthRouteFlora() {
+    document.querySelector('#route-six-flora').classList.add('show');
+    document.querySelector('#route-six-flora-btn').classList.add('route-section-selected');
+    document.querySelector('#route-six-info').classList.replace('show', 'hide')
+    document.querySelector('#route-six-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-six-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-six-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-six-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-six-info-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-six-challenge-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-six-trail-btn').classList.remove('route-section-selected');
+}
+
+function showSixthRouteInfo() {
+    document.querySelector('#route-six-info').classList.add('show');
+    document.querySelector('#route-six-info-btn').classList.add('route-section-selected');
+    document.querySelector('#route-six-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-six-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-six-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-six-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-six-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-six-flora-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-six-challenge-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-six-trail-btn').classList.remove('route-section-selected');
+}
+
+function showSixthRouteChallenge() {
+    document.querySelector('#route-six-challenges').classList.add('show');
+    document.querySelector('#route-six-challenge-btn').classList.add('route-section-selected');
+    document.querySelector('#route-six-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-six-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-six-info').classList.replace('show', 'hide')
+    document.querySelector('#route-six-trails').classList.replace('show', 'hide')
+    document.querySelector('#route-six-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-six-flora-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-six-info-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-six-trail-btn').classList.remove('route-section-selected');
+}
+
+function showSixthRouteTrails() {
+    document.querySelector('#route-six-trails').classList.add('show');
+    document.querySelector('#route-six-trail-btn').classList.add('route-section-selected');
+    document.querySelector('#route-six-flora').classList.replace('show', 'hide')
+    document.querySelector('#route-six-fauna').classList.replace('show', 'hide')
+    document.querySelector('#route-six-info').classList.replace('show', 'hide')
+    document.querySelector('#route-six-challenges').classList.replace('show', 'hide')
+    document.querySelector('#route-six-fauna-btn').classList.remove('route-section-selected')
+    document.querySelector('#route-six-flora-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-six-info-btn').classList.remove('route-section-selected');
+    document.querySelector('#route-six-challenge-btn').classList.remove('route-section-selected');
+}
