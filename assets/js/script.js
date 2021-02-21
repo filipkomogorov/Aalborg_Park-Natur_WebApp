@@ -10,6 +10,7 @@ document.querySelector('#hamburger-menu').addEventListener('click', function () 
 document.querySelector('#profile-icon').addEventListener('click', function () {
     document.querySelector('#main-page').classList.add('hide');
     document.querySelector('#profile').classList.replace('hide', 'show');
+    window.scrollTo(0, 0);
 });
 
 
@@ -18,35 +19,38 @@ document.querySelector('#profile-icon').addEventListener('click', function () {
 document.querySelector('#egholm').addEventListener('click', function () {
     document.querySelector('#main-page').classList.add('hide');
     document.querySelector('#egholm-ind').classList.replace('hide', 'show')
+    window.scrollTo(0, 0);
 });
 
 document.querySelector('#ostergadenNord').addEventListener('click', function () {
     document.querySelector('#main-page').classList.add('hide');
     document.querySelector('#ostergadenNord-ind').classList.replace('hide', 'show')
-
+    window.scrollTo(0, 0);
 });
 
 document.querySelector('#ostergadenSyd').addEventListener('click', function () {
     document.querySelector('#main-page').classList.add('hide');
     document.querySelector('#ostergadenSyd-ind').classList.replace('hide', 'show')
+    window.scrollTo(0, 0);
 })
 
 document.querySelector('#bjergbanestien').addEventListener('click', function () {
     document.querySelector('#main-page').classList.add('hide');
     document.querySelector('#bjergbanestien-ind').classList.replace('hide', 'show')
+    window.scrollTo(0, 0);
 })
 
 document.querySelector('#mulbjerge').addEventListener('click', function () {
     document.querySelector('#main-page').classList.add('hide');
     document.querySelector('#mulbjerge-ind').classList.replace('hide', 'show')
+    window.scrollTo(0, 0);
 })
 
 document.querySelector('#poulstrup').addEventListener('click', function () {
     document.querySelector('#main-page').classList.add('hide');
     document.querySelector('#poulstrup-ind').classList.replace('hide', 'show')
-})
-
-
+    window.scrollTo(0, 0);
+});
 
 
 /* CODE FOR INIDIVIDUAL ROUTE FOR EGHOLM */
@@ -489,7 +493,7 @@ document.querySelector('#route-five-fauna-btn').addEventListener('click', functi
     } else {
         showFifthRouteFauna();
     }
-})
+});
 
 document.querySelector('#route-five-trail-btn').addEventListener('click', function () {
     if (document.querySelector('#route-five-trails').classList.contains('show')) { }

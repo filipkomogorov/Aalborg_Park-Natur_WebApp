@@ -28,14 +28,17 @@
                 </div>
                 <div class="nav-menu" id="nav-menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Routes</a></li>
-                        <li><a href="#">Challenges</a></li>
+                        <li onClick="window.location.reload(); window.scrollTo(0,0)">Home</li>
+                        <!-- Refresh code inspired by https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click -->
+
+                        <li>Filter routes</li>
+                        <li>Profile</li>
                     </ul>
                 </div>
             </div>
             <div class="nav-bottom">
-                <div class="home">
+                <div class="home" onClick="window.location.reload(); window.scrollTo(0,0)">
+                    <!-- Refresh code inspired by https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click -->
                     <i class="fas fa-home fa-3x"></i>
                 </div>
                 <div class="filter">

@@ -125,29 +125,26 @@ header {
 
 .nav-bottom {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     width: 100%;
     height: 5rem;
     margin: 0 auto;
     position: fixed;
     bottom: 0;
-    align-items: center;
     background-color: cyan;
 }
 
-.home, .filter {
-    padding: 0.5rem 4rem;
-    border-right: 3px solid white;
+.nav-bottom>*:not(:last-child) {
+    border-right: 2px solid #fff;
 }
 
-.favourite {
-    padding: 0.5rem 4rem;
-}
-
-.nav-bottom-container {
+.home, .filter, .favourite {
     width: 100%;
-    position: relative;
+    height: 5rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 /* COLLAPSING ELEMENTS */
