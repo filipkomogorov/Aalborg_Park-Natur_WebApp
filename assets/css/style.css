@@ -59,10 +59,19 @@ header {
     color: white;
 }
 
+.logo img {
+    height: 4rem;
+    width: auto;
+}
+
 .hamburger-menu {
     grid-column: 3/3;
     justify-self: end;
     margin-right: 1rem;
+}
+
+.hamburger-menu>*:not(:first-child) {
+    margin-top: 4px;
 }
 
 /*Hamburger menu*/
@@ -70,7 +79,6 @@ header {
 .line {
     width: 2.5rem;
     height: 4px;
-    margin-top: 4px;
     transition: all .5s ease-in-out;
     background-color: white;
 }

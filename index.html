@@ -19,7 +19,7 @@
                 <div class="profile-icon" id="profile-icon">
                     <i class="fas fa-user-alt fa-3x"></i>
                 </div>
-                <div class="logo" id="logo">
+                <div class="logo" id="logo" onClick="window.location.reload(); window.scrollTo(0,0)">
                     <img src="assets/image/logo/logo_white.svg" alt="">
                 </div>
                 <div class="hamburger-menu" id="hamburger-menu">
@@ -56,1290 +56,1286 @@
     <main>
         <!-- all content that will be on the landing 'page' -->
 
-        <section class="main-page hi" id='main-page'>
 
-            <section class="main-page control" id='main-page'>
-                <div class="main-page__route" id="egholm">
-                    <figure>
-                        <img src="assets/image/Egholm/fawns.jpg" alt="Egholm image" class="main-page__route--first">
-                        <figcaption>Egholm</figcaption>
-                    </figure>
-                    <div class="main-page__route--notes">
-                        <ul>
-                            <li><i class="fas fa-route fa-3x"> </i></li>
-                            <li><i class="fas fa-baby-carriage fa-3x"></i></li>
-                            <li><i class="fab fa-free-code-camp fa-4x"></i></li>
-                        </ul>
-                    </div>
+
+        <section class="main-page control" id='main-page'>
+            <div class="main-page__route" id="egholm">
+                <figure>
+                    <img src="assets/image/Egholm/fawns.jpg" alt="Egholm image" class="main-page__route--first">
+                    <figcaption>Egholm</figcaption>
+                </figure>
+                <div class="main-page__route--notes">
+                    <ul>
+                        <li><i class="fas fa-route fa-3x"> </i></li>
+                        <li><i class="fas fa-baby-carriage fa-3x"></i></li>
+                        <li><i class="fab fa-free-code-camp fa-4x"></i></li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="main-page__route" id='ostergadenNord'>
-                    <figure>
-                        <img src="assets/image/¥sterådalen Nord/OsteradalenNord-01.jpg" alt="Image of Osteradalen Nord
+            <div class="main-page__route" id='ostergadenNord'>
+                <figure>
+                    <img src="assets/image/¥sterådalen Nord/OsteradalenNord-01.jpg" alt="Image of Osteradalen Nord
                         class=" main-page__route--third">
-                        <figcaption>Østeradalen Nord</figcaption>
-                    </figure>
+                    <figcaption>Østeradalen Nord</figcaption>
+                </figure>
+            </div>
+            <div class="main-page__route" id='ostergadenSyd'>
+                <figure>
+                    <img src="assets/image/¥sterådalen Syd/OsteradalenSyd-01.jpg" alt="Image of Osteradalen Syd"
+                        class="main-page__route--fourth">
+                    <figcaption>Østeradalen Syd</figcaption>
+                </figure>
+            </div>
+            <div class="main-page__route" id="bjergbanestien">
+                <figure id="">
+                    <img src="assets/image/Bjergbanestigen/Bjergbanestigen-02.jpg" alt="image of Bjregbanestige"
+                        class="main-page__route--second">
+                    <figcaption>Bjergbanestien</figcaption>
+                </figure>
+            </div>
+            <div class="main-page__route" id="mulbjerge">
+                <figure>
+                    <img src="assets/image/Mulbjerge/Mulbjerge-05.jpg" alt="image of Mulbjerge"
+                        class="main-page__route--fifth">
+                    <figcaption>Mulbjerge-</figcaption>
+                </figure>
+            </div>
+            <div class="main-page__route" id="poulstrup">
+                <figure>
+                    <img src="assets/image/Poulstrup S¢ og Dall Hede/PoulstrupS¢OgDallHede-09.jpg"
+                        alt="image of poulstrup" class="main-page__route--sixth">
+                    <figcaption>Poulstrup</figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <!-- all inidivual routes 'pages' -->
+
+        <!-- EGHOLM -->
+        <section class="route-ind hide control" id="egholm-ind">
+            <!-- top part with name, gallery and options that never changes -->
+            <div class="route-one__static-content">
+                <div class="route__title">
+                    <h1>Egholm</h1>
                 </div>
-                <div class="main-page__route" id='ostergadenSyd'>
-                    <figure>
-                        <img src="assets/image/¥sterådalen Syd/OsteradalenSyd-01.jpg" alt="Image of Osteradalen Syd"
-                            class="main-page__route--fourth">
-                        <figcaption>Østeradalen Syd</figcaption>
-                    </figure>
+                <div class="route__gallery">
+                    <img src="assets/image/Egholm/fawns.jpg" alt="image of birds">
                 </div>
-                <div class="main-page__route" id="bjergbanestien">
-                    <figure id="">
-                        <img src="assets/image/Bjergbanestigen/Bjergbanestigen-02.jpg" alt="image of Bjregbanestige"
-                            class="main-page__route--second">
-                        <figcaption>Bjergbanestien</figcaption>
-                    </figure>
+                <div class="route-one__menu route-menu">
+                    <ul>
+                        <li class="icon-info route-section-selected" id="route-one-info-btn"><i
+                                class="fas fa-info fa-3x"></i></li>
+                        <li class="icon-flora" id="route-one-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
+                        <li class="icon-fauna" id="route-one-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
+                        <li class="icon-trails" id="route-one-trail-btn"><i class="fas fa-route fa-3x"></i></li>
+                        <li class="icon-challenges" id="route-one-challenge-btn"><i class="fas fa-trophy fa-3x"></i>
+                        </li>
+                    </ul>
                 </div>
-                <div class="main-page__route" id="mulbjerge">
-                    <figure>
-                        <img src="assets/image/Mulbjerge/Mulbjerge-05.jpg" alt="image of Mulbjerge"
-                            class="main-page__route--fifth">
-                        <figcaption>Mulbjerge-</figcaption>
-                    </figure>
-                </div>
-                <div class="main-page__route" id="poulstrup">
-                    <figure>
-                        <img src="assets/image/Poulstrup S¢ og Dall Hede/PoulstrupS¢OgDallHede-09.jpg"
-                            alt="image of poulstrup" class="main-page__route--sixth">
-                        <figcaption>Poulstrup</figcaption>
-                    </figure>
-                </div>
-
-            </section>
-
-            <!-- all inidivual routes 'pages' -->
-
-            <!-- EGHOLM -->
-            <section class="route-ind hide control" id="egholm-ind">
-                <!-- top part with name, gallery and options that never changes -->
-                <div class="route-one__static-content">
-                    <div class="route__title">
-                        <h1>Egholm</h1>
+            </div>
+            <!-- route opitions - active content -->
+            <div class="route-one__active-content">
+                <div class="route__info route__image-marign show" id="route-one-info">
+                    <div class="route-one__info--text route-text">
+                        <h2>Title Info</h2>
+                        <p>Some text goes here</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                            quam
+                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                            repudiandae
+                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                            rerum!
+                            Aliquid vitae ab iusto.</p>
                     </div>
-                    <div class="route__gallery">
-                        <img src="assets/image/Egholm/fawns.jpg" alt="image of birds">
-                    </div>
-                    <div class="route-one__menu route-menu">
-                        <ul>
-                            <li class="icon-info route-section-selected" id="route-one-info-btn"><i
-                                    class="fas fa-info fa-3x"></i></li>
-                            <li class="icon-flora" id="route-one-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
-                            <li class="icon-fauna" id="route-one-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
-                            <li class="icon-trails" id="route-one-trail-btn"><i class="fas fa-route fa-3x"></i></li>
-                            <li class="icon-challenges" id="route-one-challenge-btn"><i class="fas fa-trophy fa-3x"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- route opitions - active content -->
-                <div class="route-one__active-content">
-                    <div class="route__info route__image-marign show" id="route-one-info">
-                        <div class="route-one__info--text route-text">
-                            <h2>Title Info</h2>
-                            <p>Some text goes here</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                                quam
-                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                                repudiandae
-                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                                rerum!
-                                Aliquid vitae ab iusto.</p>
+                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
+
+                    <div class="route-one__info--activities">
+                        <div class="route-text">
+                            <h2>Activities</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
                         </div>
-                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
-
-                        <div class="route-one__info--activities">
-                            <div class="route-text">
-                                <h2>Activities</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
-                            </div>
-                            <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
-                            <div class="route-text">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
-                                    consectetur
-                                    consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
+                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
+                        <div class="route-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
+                                consectetur
+                                consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
                         </div>
 
-                        <div class="route-one__info--history">
-                            <div class="route-text">
-                                <h2>History</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
-                                    deserunt
-                                    in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
-                                    laboriosam
-                                    rem
-                                    reiciendis! Ratione.
-                                </p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
-                        </div>
+                        <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
                     </div>
 
-                    <div class="route__flora route__image-marign hide" id="route-one-flora">
+                    <div class="route-one__info--history">
                         <div class="route-text">
-                            <h2>Title Flora</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__fauna route__image-marign hide" id="route-one-fauna">
-                        <div class="route-text">
-                            <h2>Title Fauna</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-                    <div class="route__trails hide" id="route-one-trails">
-                        <div class="route-text">
-                            <h2>Trails</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__challenges hide" id="route-one-challenges">
-                        <div class="route-text">
-                            <h2>Challenges</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <div class="cards">
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Running</h3>
-                                </div>
-                                <div class="challenge-img egholm-run"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Walking</h3>
-                                </div>
-                                <div class="challenge-img egholm-walk"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Cycling</h3>
-                                </div>
-                                <div class="challenge-img egholm-cycle"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Hiking</h3>
-                                </div>
-                                <div class="challenge-img egholm-hike"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
+                            <h2>History</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
+                                deserunt
+                                in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
+                                laboriosam
+                                rem
+                                reiciendis! Ratione.
+                            </p>
                         </div>
 
+                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
                     </div>
                 </div>
 
-            </section>
-
-
-            <!-- østerådalen nord -->
-
-            <section class="route-ind hide control" id="ostergadenNord-ind">
-                <!-- top part with name, gallery and options that never changes -->
-                <div class="route-one__static-content">
-                    <div class="route__title">
-                        <h1>Østerådalen Nord</h1>
+                <div class="route__flora route__image-marign hide" id="route-one-flora">
+                    <div class="route-text">
+                        <h2>Title Flora</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
                     </div>
-                    <div class="route__gallery">
-                        <img src="assets/image/¥sterådalen Nord/OsteradalenNord-01.jpg" alt="image of birds">
+                    <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
                     </div>
-                    <div class="route-one__menu route-menu">
-                        <ul>
-                            <li class="icon-info route-section-selected" id="route-two-info-btn"><i
-                                    class="fas fa-info fa-3x"></i></li>
-                            <li class="icon-flora" id="route-two-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
-                            <li class="icon-fauna" id="route-two-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
-                            <li class="icon-trails" id="route-two-trail-btn"><i class="fas fa-route fa-3x"></i></li>
-                            <li class="icon-challenges" id="route-two-challenge-btn"><i class="fas fa-trophy fa-3x"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- route opitions - active content -->
-                <div class="route-one__active-content">
-                    <div class="route__info route__image-marign show" id="route-two-info">
-                        <div class="route-one__info--text route-text">
-                            <h2>Title Info</h2>
-                            <p>Some text goes here</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                                quam
-                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                                repudiandae
-                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                                rerum!
-                                Aliquid vitae ab iusto.</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
-
-                        <div class="route-one__info--activities">
-                            <div class="route-text">
-                                <h2>Activities</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
-                            </div>
-                            <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
-                            <div class="route-text">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
-                                    consectetur
-                                    consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
-                        </div>
-
-                        <div class="route-one__info--history">
-                            <div class="route-text">
-                                <h2>History</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
-                                    deserunt
-                                    in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
-                                    laboriosam
-                                    rem
-                                    reiciendis! Ratione.
-                                </p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
-                        </div>
-                    </div>
-
-                    <div class="route__flora route__image-marign hide" id="route-two-flora">
-                        <div class="route-text">
-                            <h2>Title Flora</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__fauna route__image-marign hide" id="route-two-fauna">
-                        <div class="route-text">
-                            <h2>Title Fauna</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-                    <div class="route__trails hide" id="route-two-trails">
-                        <div class="route-text">
-                            <h2>Trails</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__challenges hide" id="route-two-challenges">
-                        <div class="route-text">
-                            <h2>Challenges</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <div class="cards">
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Running</h3>
-                                </div>
-                                <div class="challenge-img egholm-run"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Walking</h3>
-                                </div>
-                                <div class="challenge-img egholm-walk"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Cycling</h3>
-                                </div>
-                                <div class="challenge-img egholm-cycle"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Hiking</h3>
-                                </div>
-                                <div class="challenge-img egholm-hike"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
                     </div>
                 </div>
 
-            </section>
-
-
-            <!-- OSTERGADEN SYD -->
-
-            <section class="route-ind hide control" id="ostergadenSyd-ind">
-                <!-- top part with name, gallery and options that never changes -->
-                <div class="route-one__static-content">
-                    <div class="route__title">
-                        <h1>Østerådalen Syd</h1>
+                <div class="route__fauna route__image-marign hide" id="route-one-fauna">
+                    <div class="route-text">
+                        <h2>Title Fauna</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
                     </div>
-                    <div class="route__gallery">
-                        <img src="assets/image/¥sterådalen Syd/OsteradalenSyd-01.jpg" alt="image of birds">
+                    <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
                     </div>
-                    <div class="route-one__menu route-menu">
-                        <ul>
-                            <li class="icon-info route-section-selected" id="route-three-info-btn"><i
-                                    class="fas fa-info fa-3x"></i></li>
-                            <li class="icon-flora" id="route-three-flora-btn"><i class="fab fa-pagelines fa-3x"></i>
-                            </li>
-                            <li class="icon-fauna" id="route-three-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
-                            <li class="icon-trails" id="route-three-trail-btn"><i class="fas fa-route fa-3x"></i></li>
-                            <li class="icon-challenges" id="route-three-challenge-btn"><i
-                                    class="fas fa-trophy fa-3x"></i>
-                            </li>
-                        </ul>
+                    <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
                     </div>
                 </div>
-                <!-- route opitions - active content -->
-                <div class="route-one__active-content">
-                    <div class="route__info route__image-marign show" id="route-three-info">
-                        <div class="route-one__info--text route-text">
-                            <h2>Title Info</h2>
-                            <p>Some text goes here</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                                quam
-                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                                repudiandae
-                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                                rerum!
-                                Aliquid vitae ab iusto.</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
-
-                        <div class="route-one__info--activities">
-                            <div class="route-text">
-                                <h2>Activities</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
-                            </div>
-                            <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
-                            <div class="route-text">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
-                                    consectetur
-                                    consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
-                        </div>
-
-                        <div class="route-one__info--history">
-                            <div class="route-text">
-                                <h2>History</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
-                                    deserunt
-                                    in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
-                                    laboriosam
-                                    rem
-                                    reiciendis! Ratione.
-                                </p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
-                        </div>
+                <div class="route__trails hide" id="route-one-trails">
+                    <div class="route-text">
+                        <h2>Trails</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
                     </div>
-
-                    <div class="route__flora route__image-marign hide" id="route-three-flora">
-                        <div class="route-text">
-                            <h2>Title Flora</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__fauna route__image-marign hide" id="route-three-fauna">
-                        <div class="route-text">
-                            <h2>Title Fauna</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-                    <div class="route__trails hide" id="route-three-trails">
-                        <div class="route-text">
-                            <h2>Trails</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__challenges hide" id="route-three-challenges">
-                        <div class="route-text">
-                            <h2>Challenges</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <div class="cards">
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Running</h3>
-                                </div>
-                                <div class="challenge-img egholm-run"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Walking</h3>
-                                </div>
-                                <div class="challenge-img egholm-walk"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Cycling</h3>
-                                </div>
-                                <div class="challenge-img egholm-cycle"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Hiking</h3>
-                                </div>
-                                <div class="challenge-img egholm-hike"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
                     </div>
                 </div>
 
-            </section>
-
-
-            <!--  Bjergbanestien -->
-
-            <section class="route-ind hide control" id="bjergbanestien-ind">
-                <!-- top part with name, gallery and options that never changes -->
-                <div class="route-one__static-content">
-                    <div class="route__title">
-                        <h1>Bjergbanestien</h1>
+                <div class="route__challenges hide" id="route-one-challenges">
+                    <div class="route-text">
+                        <h2>Challenges</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
                     </div>
-                    <div class="route__gallery">
-                        <img src="assets/image/Bjergbanestigen/Bjergbanestigen-02.jpg" alt="image of birds">
+                    <div class="cards">
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Running</h3>
+                            </div>
+                            <div class="challenge-img egholm-run"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Walking</h3>
+                            </div>
+                            <div class="challenge-img egholm-walk"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Cycling</h3>
+                            </div>
+                            <div class="challenge-img egholm-cycle"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Hiking</h3>
+                            </div>
+                            <div class="challenge-img egholm-hike"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="route-one__menu route-menu">
-                        <ul>
-                            <li class="icon-info route-section-selected" id="route-four-info-btn"><i
-                                    class="fas fa-info fa-3x"></i></li>
-                            <li class="icon-flora" id="route-four-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
-                            <li class="icon-fauna" id="route-four-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
-                            <li class="icon-trails" id="route-four-trail-btn"><i class="fas fa-route fa-3x"></i></li>
-                            <li class="icon-challenges" id="route-four-challenge-btn"><i
-                                    class="fas fa-trophy fa-3x"></i>
-                            </li>
-                        </ul>
-                    </div>
+
                 </div>
-                <!-- route opitions - active content -->
-                <div class="route-one__active-content">
-                    <div class="route__info route__image-marign show" id="route-four-info">
-                        <div class="route-one__info--text route-text">
-                            <h2>Title Info</h2>
-                            <p>Some text goes here</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                                quam
-                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                                repudiandae
-                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                                rerum!
-                                Aliquid vitae ab iusto.</p>
+            </div>
+
+        </section>
+
+
+        <!-- østerådalen nord -->
+
+        <section class="route-ind hide control" id="ostergadenNord-ind">
+            <!-- top part with name, gallery and options that never changes -->
+            <div class="route-one__static-content">
+                <div class="route__title">
+                    <h1>Østerådalen Nord</h1>
+                </div>
+                <div class="route__gallery">
+                    <img src="assets/image/¥sterådalen Nord/OsteradalenNord-01.jpg" alt="image of birds">
+                </div>
+                <div class="route-one__menu route-menu">
+                    <ul>
+                        <li class="icon-info route-section-selected" id="route-two-info-btn"><i
+                                class="fas fa-info fa-3x"></i></li>
+                        <li class="icon-flora" id="route-two-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
+                        <li class="icon-fauna" id="route-two-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
+                        <li class="icon-trails" id="route-two-trail-btn"><i class="fas fa-route fa-3x"></i></li>
+                        <li class="icon-challenges" id="route-two-challenge-btn"><i class="fas fa-trophy fa-3x"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- route opitions - active content -->
+            <div class="route-one__active-content">
+                <div class="route__info route__image-marign show" id="route-two-info">
+                    <div class="route-one__info--text route-text">
+                        <h2>Title Info</h2>
+                        <p>Some text goes here</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                            quam
+                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                            repudiandae
+                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                            rerum!
+                            Aliquid vitae ab iusto.</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
+
+                    <div class="route-one__info--activities">
+                        <div class="route-text">
+                            <h2>Activities</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
                         </div>
-                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
-
-                        <div class="route-one__info--activities">
-                            <div class="route-text">
-                                <h2>Activities</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
-                            </div>
-                            <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
-                            <div class="route-text">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
-                                    consectetur
-                                    consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
+                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
+                        <div class="route-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
+                                consectetur
+                                consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
                         </div>
 
-                        <div class="route-one__info--history">
-                            <div class="route-text">
-                                <h2>History</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
-                                    deserunt
-                                    in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
-                                    laboriosam
-                                    rem
-                                    reiciendis! Ratione.
-                                </p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
-                        </div>
+                        <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
                     </div>
 
-                    <div class="route__flora route__image-marign hide" id="route-four-flora">
+                    <div class="route-one__info--history">
                         <div class="route-text">
-                            <h2>Title Flora</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__fauna route__image-marign hide" id="route-four-fauna">
-                        <div class="route-text">
-                            <h2>Title Fauna</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-                    <div class="route__trails hide" id="route-four-trails">
-                        <div class="route-text">
-                            <h2>Trails</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__challenges hide" id="route-four-challenges">
-                        <div class="route-text">
-                            <h2>Challenges</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <div class="cards">
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Running</h3>
-                                </div>
-                                <div class="challenge-img egholm-run"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Walking</h3>
-                                </div>
-                                <div class="challenge-img egholm-walk"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Cycling</h3>
-                                </div>
-                                <div class="challenge-img egholm-cycle"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Hiking</h3>
-                                </div>
-                                <div class="challenge-img egholm-hike"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
+                            <h2>History</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
+                                deserunt
+                                in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
+                                laboriosam
+                                rem
+                                reiciendis! Ratione.
+                            </p>
                         </div>
 
+                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
                     </div>
                 </div>
 
-            </section>
-
-            <!--  Mulbjerge -->
-
-            <section class="route-ind hide control" id="mulbjerge-ind">
-                <!-- top part with name, gallery and options that never changes -->
-                <div class="route-one__static-content">
-                    <div class="route__title">
-                        <h1>Mulbjerge</h1>
+                <div class="route__flora route__image-marign hide" id="route-two-flora">
+                    <div class="route-text">
+                        <h2>Title Flora</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
                     </div>
-                    <div class="route__gallery">
-                        <img src="assets/image/Bjergbanestigen/Bjergbanestigen-02.jpg" alt="image of birds">
+                    <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
                     </div>
-                    <div class="route-one__menu route-menu">
-                        <ul>
-                            <li class="icon-info route-section-selected" id="route-five-info-btn"><i
-                                    class="fas fa-info fa-3x"></i></li>
-                            <li class="icon-flora" id="route-five-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
-                            <li class="icon-fauna" id="route-five-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
-                            <li class="icon-trails" id="route-five-trail-btn"><i class="fas fa-route fa-3x"></i></li>
-                            <li class="icon-challenges" id="route-five-challenge-btn"><i
-                                    class="fas fa-trophy fa-3x"></i>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- route opitions - active content -->
-                <div class="route-one__active-content">
-                    <div class="route__info route__image-marign show" id="route-five-info">
-                        <div class="route-one__info--text route-text">
-                            <h2>Title Info</h2>
-                            <p>Some text goes here</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                                quam
-                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                                repudiandae
-                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                                rerum!
-                                Aliquid vitae ab iusto.</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
-
-                        <div class="route-one__info--activities">
-                            <div class="route-text">
-                                <h2>Activities</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
-                            </div>
-                            <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
-                            <div class="route-text">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
-                                    consectetur
-                                    consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
-                        </div>
-
-                        <div class="route-one__info--history">
-                            <div class="route-text">
-                                <h2>History</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
-                                    deserunt
-                                    in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
-                                    laboriosam
-                                    rem
-                                    reiciendis! Ratione.
-                                </p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
-                        </div>
-                    </div>
-
-                    <div class="route__flora route__image-marign hide" id="route-five-flora">
-                        <div class="route-text">
-                            <h2>Title Flora</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__fauna route__image-marign hide" id="route-five-fauna">
-                        <div class="route-text">
-                            <h2>Title Fauna</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-                    <div class="route__trails hide" id="route-five-trails">
-                        <div class="route-text">
-                            <h2>Trails</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__challenges hide" id="route-five-challenges">
-                        <div class="route-text">
-                            <h2>Challenges</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <div class="cards">
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Running</h3>
-                                </div>
-                                <div class="challenge-img egholm-run"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Walking</h3>
-                                </div>
-                                <div class="challenge-img egholm-walk"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Cycling</h3>
-                                </div>
-                                <div class="challenge-img egholm-cycle"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Hiking</h3>
-                                </div>
-                                <div class="challenge-img egholm-hike"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
                     </div>
                 </div>
 
-            </section>
-
-
-            <!--  Poulstrup -->
-
-            <section class="route-ind hide control" id="poulstrup-ind">
-                <!-- top part with name, gallery and options that never changes -->
-                <div class="route-one__static-content">
-                    <div class="route__title">
-                        <h1>Poulstrup</h1>
+                <div class="route__fauna route__image-marign hide" id="route-two-fauna">
+                    <div class="route-text">
+                        <h2>Title Fauna</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
                     </div>
-                    <div class="route__gallery">
-                        <img src="assets/image/Poulstrup S¢ og Dall Hede/PoulstrupS¢OgDallHede-01.jpg"
-                            alt="image of birds">
+                    <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
                     </div>
-                    <div class="route-one__menu route-menu">
-                        <ul>
-                            <li class="icon-info route-section-selected" id="route-six-info-btn"><i
-                                    class="fas fa-info fa-3x"></i></li>
-                            <li class="icon-flora" id="route-six-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
-                            <li class="icon-fauna" id="route-six-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
-                            <li class="icon-trails" id="route-six-trail-btn"><i class="fas fa-route fa-3x"></i></li>
-                            <li class="icon-challenges" id="route-six-challenge-btn"><i class="fas fa-trophy fa-3x"></i>
-                            </li>
-                        </ul>
+                    <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
                     </div>
                 </div>
-                <!-- route opitions - active content -->
-                <div class="route-one__active-content">
-                    <div class="route__info route__image-marign show" id="route-six-info">
-                        <div class="route-one__info--text route-text">
-                            <h2>Title Info</h2>
-                            <p>Some text goes here</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                                quam
-                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                                repudiandae
-                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                                rerum!
-                                Aliquid vitae ab iusto.</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
-
-                        <div class="route-one__info--activities">
-                            <div class="route-text">
-                                <h2>Activities</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
-                            </div>
-                            <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
-                            <div class="route-text">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
-                                    consectetur
-                                    consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
-                        </div>
-
-                        <div class="route-one__info--history">
-                            <div class="route-text">
-                                <h2>History</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
-                                    deserunt
-                                    in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
-                                    laboriosam
-                                    rem
-                                    reiciendis! Ratione.
-                                </p>
-                            </div>
-
-                            <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
-                        </div>
+                <div class="route__trails hide" id="route-two-trails">
+                    <div class="route-text">
+                        <h2>Trails</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
                     </div>
-
-                    <div class="route__flora route__image-marign hide" id="route-six-flora">
-                        <div class="route-text">
-                            <h2>Title Flora</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__fauna route__image-marign hide" id="route-six-fauna">
-                        <div class="route-text">
-                            <h2>Title Fauna</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
-                                voluptate
-                                suscipit vero?</p>
-                        </div>
-                        <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-                    <div class="route__trails hide" id="route-six-trails">
-                        <div class="route-text">
-                            <h2>Trails</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
-                        <div class="route-text">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
-                                quaerat
-                                nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
-                                quasi
-                                ad est officia?</p>
-                        </div>
-                    </div>
-
-                    <div class="route__challenges hide" id="route-six-challenges">
-                        <div class="route-text">
-                            <h2>Challenges</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
-                                Impedit
-                                aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
-                                blanditiis sapiente sequi? Dolorum, saepe!</p>
-                        </div>
-                        <div class="cards">
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Running</h3>
-                                </div>
-                                <div class="challenge-img egholm-run"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Walking</h3>
-                                </div>
-                                <div class="challenge-img egholm-walk"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Cycling</h3>
-                                </div>
-                                <div class="challenge-img egholm-cycle"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                            <div class="challenge">
-                                <div class="challenge-title">
-                                    <h3>Hiking</h3>
-                                </div>
-                                <div class="challenge-img egholm-hike"></div>
-                                <div class="challenge-btn">
-                                    <a href="#">Join</a>
-                                </div>
-                            </div>
-                        </div>
-
+                    <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
                     </div>
                 </div>
 
-            </section>
+                <div class="route__challenges hide" id="route-two-challenges">
+                    <div class="route-text">
+                        <h2>Challenges</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <div class="cards">
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Running</h3>
+                            </div>
+                            <div class="challenge-img egholm-run"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Walking</h3>
+                            </div>
+                            <div class="challenge-img egholm-walk"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Cycling</h3>
+                            </div>
+                            <div class="challenge-img egholm-cycle"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Hiking</h3>
+                            </div>
+                            <div class="challenge-img egholm-hike"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- profile page -->
-            <section class="profile hide control" id='profile'>
-                <!--Profile picure-->
-                <div class="profile-image">
-                    <img src="/assets/image/challenge5.jpg">
                 </div>
-                <!--Route images-->
-                <div class="profile-picture-routes">
-                    <!--TITLE-->
-                    <div class="picture-title">
-                        <h2>Routes completed</h2>
+            </div>
+
+        </section>
+
+
+        <!-- OSTERGADEN SYD -->
+
+        <section class="route-ind hide control" id="ostergadenSyd-ind">
+            <!-- top part with name, gallery and options that never changes -->
+            <div class="route-one__static-content">
+                <div class="route__title">
+                    <h1>Østerådalen Syd</h1>
+                </div>
+                <div class="route__gallery">
+                    <img src="assets/image/¥sterådalen Syd/OsteradalenSyd-01.jpg" alt="image of birds">
+                </div>
+                <div class="route-one__menu route-menu">
+                    <ul>
+                        <li class="icon-info route-section-selected" id="route-three-info-btn"><i
+                                class="fas fa-info fa-3x"></i></li>
+                        <li class="icon-flora" id="route-three-flora-btn"><i class="fab fa-pagelines fa-3x"></i>
+                        </li>
+                        <li class="icon-fauna" id="route-three-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
+                        <li class="icon-trails" id="route-three-trail-btn"><i class="fas fa-route fa-3x"></i></li>
+                        <li class="icon-challenges" id="route-three-challenge-btn"><i class="fas fa-trophy fa-3x"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- route opitions - active content -->
+            <div class="route-one__active-content">
+                <div class="route__info route__image-marign show" id="route-three-info">
+                    <div class="route-one__info--text route-text">
+                        <h2>Title Info</h2>
+                        <p>Some text goes here</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                            quam
+                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                            repudiandae
+                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                            rerum!
+                            Aliquid vitae ab iusto.</p>
                     </div>
-                    <!--Image-->
-                    <div class="picture-routes">
-                        <img src="/assets/image/Egholm/Egholm-02.jpg" alt="Route image">
+                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
+
+                    <div class="route-one__info--activities">
+                        <div class="route-text">
+                            <h2>Activities</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
+                        <div class="route-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
+                                consectetur
+                                consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
+                        </div>
+
+                        <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
                     </div>
-                    <!--IMAGE TITLE-->
-                    <div class="picture-routes-title">
-                        <h2>Egholm</h2>
-                    </div>
-                    <!--Opacity box-->
-                    <div class="picture-routes-inside-text"></div>
-                    <!--Arrows-->
-                    <div class="arrow-left">
-                        <i class="fas fa-chevron-left"></i>
-                    </div>
-                    <div class="arrow-right">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                    <!--DOTS-->
-                    <div class="dots">
-                        <ul>
-                            <li class="dot1"><i class="fas fa-circle"></i></li>
-                            <li class="dot2"><i class="fas fa-circle"></i></li>
-                            <li class="dot3"><i class="fas fa-circle"></i></li>
-                        </ul>
+
+                    <div class="route-one__info--history">
+                        <div class="route-text">
+                            <h2>History</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
+                                deserunt
+                                in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
+                                laboriosam
+                                rem
+                                reiciendis! Ratione.
+                            </p>
+                        </div>
+
+                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
                     </div>
                 </div>
-                <!--SECTION CHALLENGES-->
-                <div class="challenges">
-                    <div class="challenges-title">
-                        <h2>Challenges completed</h2>
+
+                <div class="route__flora route__image-marign hide" id="route-three-flora">
+                    <div class="route-text">
+                        <h2>Title Flora</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
                     </div>
-                    <div class="challenges-names">
-                        <ul>
-                            <li class="name1">
-                                <h3>Lorem</h3>
-                            </li>
-                            <li class="name2">
-                                <h3>Lorem</h3>
-                            </li>
-                            <li class="name3">
-                                <h3>Lorem</h3>
-                            </li>
-                        </ul>
+                    <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
                     </div>
-                </div>
-                <div class="bottom-profile-images">
-                    <!--Image-->
-                    <div class="bottom-profile-image">
-                        <img src="/assets/image/Egholm/Egholm-02.jpg" alt="Route image">
-                    </div>
-                    <!--Arrows-->
-                    <div class="arrow-left">
-                        <i class="fas fa-chevron-left"></i>
-                    </div>
-                    <div class="arrow-right">
-                        <i class="fas fa-chevron-right"></i>
-                    </div>
-                    <!--DOTS-->
-                    <div class="dots">
-                        <ul>
-                            <li class="dot1"><i class="fas fa-circle"></i></li>
-                            <li class="dot2"><i class="fas fa-circle"></i></li>
-                            <li class="dot3"><i class="fas fa-circle"></i></li>
-                        </ul>
+                    <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
                     </div>
                 </div>
-            </section>
+
+                <div class="route__fauna route__image-marign hide" id="route-three-fauna">
+                    <div class="route-text">
+                        <h2>Title Fauna</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+                <div class="route__trails hide" id="route-three-trails">
+                    <div class="route-text">
+                        <h2>Trails</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+
+                <div class="route__challenges hide" id="route-three-challenges">
+                    <div class="route-text">
+                        <h2>Challenges</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <div class="cards">
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Running</h3>
+                            </div>
+                            <div class="challenge-img egholm-run"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Walking</h3>
+                            </div>
+                            <div class="challenge-img egholm-walk"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Cycling</h3>
+                            </div>
+                            <div class="challenge-img egholm-cycle"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Hiking</h3>
+                            </div>
+                            <div class="challenge-img egholm-hike"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--  Bjergbanestien -->
+
+        <section class="route-ind hide control" id="bjergbanestien-ind">
+            <!-- top part with name, gallery and options that never changes -->
+            <div class="route-one__static-content">
+                <div class="route__title">
+                    <h1>Bjergbanestien</h1>
+                </div>
+                <div class="route__gallery">
+                    <img src="assets/image/Bjergbanestigen/Bjergbanestigen-02.jpg" alt="image of birds">
+                </div>
+                <div class="route-one__menu route-menu">
+                    <ul>
+                        <li class="icon-info route-section-selected" id="route-four-info-btn"><i
+                                class="fas fa-info fa-3x"></i></li>
+                        <li class="icon-flora" id="route-four-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
+                        <li class="icon-fauna" id="route-four-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
+                        <li class="icon-trails" id="route-four-trail-btn"><i class="fas fa-route fa-3x"></i></li>
+                        <li class="icon-challenges" id="route-four-challenge-btn"><i class="fas fa-trophy fa-3x"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- route opitions - active content -->
+            <div class="route-one__active-content">
+                <div class="route__info route__image-marign show" id="route-four-info">
+                    <div class="route-one__info--text route-text">
+                        <h2>Title Info</h2>
+                        <p>Some text goes here</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                            quam
+                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                            repudiandae
+                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                            rerum!
+                            Aliquid vitae ab iusto.</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
+
+                    <div class="route-one__info--activities">
+                        <div class="route-text">
+                            <h2>Activities</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
+                        <div class="route-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
+                                consectetur
+                                consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
+                        </div>
+
+                        <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
+                    </div>
+
+                    <div class="route-one__info--history">
+                        <div class="route-text">
+                            <h2>History</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
+                                deserunt
+                                in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
+                                laboriosam
+                                rem
+                                reiciendis! Ratione.
+                            </p>
+                        </div>
+
+                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
+                    </div>
+                </div>
+
+                <div class="route__flora route__image-marign hide" id="route-four-flora">
+                    <div class="route-text">
+                        <h2>Title Flora</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+
+                <div class="route__fauna route__image-marign hide" id="route-four-fauna">
+                    <div class="route-text">
+                        <h2>Title Fauna</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+                <div class="route__trails hide" id="route-four-trails">
+                    <div class="route-text">
+                        <h2>Trails</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+
+                <div class="route__challenges hide" id="route-four-challenges">
+                    <div class="route-text">
+                        <h2>Challenges</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <div class="cards">
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Running</h3>
+                            </div>
+                            <div class="challenge-img egholm-run"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Walking</h3>
+                            </div>
+                            <div class="challenge-img egholm-walk"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Cycling</h3>
+                            </div>
+                            <div class="challenge-img egholm-cycle"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Hiking</h3>
+                            </div>
+                            <div class="challenge-img egholm-hike"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!--  Mulbjerge -->
+
+        <section class="route-ind hide control" id="mulbjerge-ind">
+            <!-- top part with name, gallery and options that never changes -->
+            <div class="route-one__static-content">
+                <div class="route__title">
+                    <h1>Mulbjerge</h1>
+                </div>
+                <div class="route__gallery">
+                    <img src="assets/image/Bjergbanestigen/Bjergbanestigen-02.jpg" alt="image of birds">
+                </div>
+                <div class="route-one__menu route-menu">
+                    <ul>
+                        <li class="icon-info route-section-selected" id="route-five-info-btn"><i
+                                class="fas fa-info fa-3x"></i></li>
+                        <li class="icon-flora" id="route-five-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
+                        <li class="icon-fauna" id="route-five-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
+                        <li class="icon-trails" id="route-five-trail-btn"><i class="fas fa-route fa-3x"></i></li>
+                        <li class="icon-challenges" id="route-five-challenge-btn"><i class="fas fa-trophy fa-3x"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- route opitions - active content -->
+            <div class="route-one__active-content">
+                <div class="route__info route__image-marign show" id="route-five-info">
+                    <div class="route-one__info--text route-text">
+                        <h2>Title Info</h2>
+                        <p>Some text goes here</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                            quam
+                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                            repudiandae
+                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                            rerum!
+                            Aliquid vitae ab iusto.</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
+
+                    <div class="route-one__info--activities">
+                        <div class="route-text">
+                            <h2>Activities</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
+                        <div class="route-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
+                                consectetur
+                                consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
+                        </div>
+
+                        <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
+                    </div>
+
+                    <div class="route-one__info--history">
+                        <div class="route-text">
+                            <h2>History</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
+                                deserunt
+                                in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
+                                laboriosam
+                                rem
+                                reiciendis! Ratione.
+                            </p>
+                        </div>
+
+                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
+                    </div>
+                </div>
+
+                <div class="route__flora route__image-marign hide" id="route-five-flora">
+                    <div class="route-text">
+                        <h2>Title Flora</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+
+                <div class="route__fauna route__image-marign hide" id="route-five-fauna">
+                    <div class="route-text">
+                        <h2>Title Fauna</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+                <div class="route__trails hide" id="route-five-trails">
+                    <div class="route-text">
+                        <h2>Trails</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+
+                <div class="route__challenges hide" id="route-five-challenges">
+                    <div class="route-text">
+                        <h2>Challenges</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <div class="cards">
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Running</h3>
+                            </div>
+                            <div class="challenge-img egholm-run"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Walking</h3>
+                            </div>
+                            <div class="challenge-img egholm-walk"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Cycling</h3>
+                            </div>
+                            <div class="challenge-img egholm-cycle"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Hiking</h3>
+                            </div>
+                            <div class="challenge-img egholm-hike"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--  Poulstrup -->
+
+        <section class="route-ind hide control" id="poulstrup-ind">
+            <!-- top part with name, gallery and options that never changes -->
+            <div class="route-one__static-content">
+                <div class="route__title">
+                    <h1>Poulstrup</h1>
+                </div>
+                <div class="route__gallery">
+                    <img src="assets/image/Poulstrup S¢ og Dall Hede/PoulstrupS¢OgDallHede-01.jpg" alt="image of birds">
+                </div>
+                <div class="route-one__menu route-menu">
+                    <ul>
+                        <li class="icon-info route-section-selected" id="route-six-info-btn"><i
+                                class="fas fa-info fa-3x"></i></li>
+                        <li class="icon-flora" id="route-six-flora-btn"><i class="fab fa-pagelines fa-3x"></i></li>
+                        <li class="icon-fauna" id="route-six-fauna-btn"><i class="fas fa-dove fa-3x"></i></li>
+                        <li class="icon-trails" id="route-six-trail-btn"><i class="fas fa-route fa-3x"></i></li>
+                        <li class="icon-challenges" id="route-six-challenge-btn"><i class="fas fa-trophy fa-3x"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- route opitions - active content -->
+            <div class="route-one__active-content">
+                <div class="route__info route__image-marign show" id="route-six-info">
+                    <div class="route-one__info--text route-text">
+                        <h2>Title Info</h2>
+                        <p>Some text goes here</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                            quam
+                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                            repudiandae
+                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                            rerum!
+                            Aliquid vitae ab iusto.</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
+
+                    <div class="route-one__info--activities">
+                        <div class="route-text">
+                            <h2>Activities</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
+                        <div class="route-text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae pariatur ad
+                                consectetur
+                                consequuntur sequi a quae asperiores harum voluptatibus officia!</p>
+                        </div>
+
+                        <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
+                    </div>
+
+                    <div class="route-one__info--history">
+                        <div class="route-text">
+                            <h2>History</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
+                                deserunt
+                                in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
+                                laboriosam
+                                rem
+                                reiciendis! Ratione.
+                            </p>
+                        </div>
+
+                        <img src="assets/image/Egholm/Egholm-08.jpg" alt="image of Egholm">
+                    </div>
+                </div>
+
+                <div class="route__flora route__image-marign hide" id="route-six-flora">
+                    <div class="route-text">
+                        <h2>Title Flora</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-08.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-09.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+
+                <div class="route__fauna route__image-marign hide" id="route-six-fauna">
+                    <div class="route-text">
+                        <h2>Title Fauna</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-04.jpg" alt="photo of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, at?</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste quidem veniam nihil
+                            voluptate
+                            suscipit vero?</p>
+                    </div>
+                    <img src="assets/image/Egholm/Egholm-02.jpg" alt="Image of flowers">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+                <div class="route__trails hide" id="route-six-trails">
+                    <div class="route-text">
+                        <h2>Trails</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <img src="assets/image/Egholm/maps.JPG" alt="Map of the place">
+                    <div class="route-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quae ipsa nihil
+                            quaerat
+                            nobis vel quibusdam, voluptatem, eos delectus velit ut. Aut aliquid beatae, quia ipsa
+                            quasi
+                            ad est officia?</p>
+                    </div>
+                </div>
+
+                <div class="route__challenges hide" id="route-six-challenges">
+                    <div class="route-text">
+                        <h2>Challenges</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
+                            Impedit
+                            aperiam quos beatae distinctio odit illo labore unde! Reprehenderit quibusdam odit saepe
+                            blanditiis sapiente sequi? Dolorum, saepe!</p>
+                    </div>
+                    <div class="cards">
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Running</h3>
+                            </div>
+                            <div class="challenge-img egholm-run"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Walking</h3>
+                            </div>
+                            <div class="challenge-img egholm-walk"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Cycling</h3>
+                            </div>
+                            <div class="challenge-img egholm-cycle"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                        <div class="challenge">
+                            <div class="challenge-title">
+                                <h3>Hiking</h3>
+                            </div>
+                            <div class="challenge-img egholm-hike"></div>
+                            <div class="challenge-btn">
+                                <a href="#">Join</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- profile page -->
+        <section class="profile hide control" id='profile'>
+            <!--Profile picure-->
+            <div class="profile-image">
+                <img src="/assets/image/challenge5.jpg">
+            </div>
+            <!--Route images-->
+            <div class="profile-picture-routes">
+                <!--TITLE-->
+                <div class="picture-title">
+                    <h2>Routes completed</h2>
+                </div>
+                <!--Image-->
+                <div class="picture-routes">
+                    <img src="/assets/image/Egholm/Egholm-02.jpg" alt="Route image">
+                </div>
+                <!--IMAGE TITLE-->
+                <div class="picture-routes-title">
+                    <h2>Egholm</h2>
+                </div>
+                <!--Opacity box-->
+                <div class="picture-routes-inside-text"></div>
+                <!--Arrows-->
+                <div class="arrow-left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="arrow-right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <!--DOTS-->
+                <div class="dots">
+                    <ul>
+                        <li class="dot1"><i class="fas fa-circle"></i></li>
+                        <li class="dot2"><i class="fas fa-circle"></i></li>
+                        <li class="dot3"><i class="fas fa-circle"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <!--SECTION CHALLENGES-->
+            <div class="challenges">
+                <div class="challenges-title">
+                    <h2>Challenges completed</h2>
+                </div>
+                <div class="challenges-names">
+                    <ul>
+                        <li class="name1">
+                            <h3>Lorem</h3>
+                        </li>
+                        <li class="name2">
+                            <h3>Lorem</h3>
+                        </li>
+                        <li class="name3">
+                            <h3>Lorem</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom-profile-images">
+                <!--Image-->
+                <div class="bottom-profile-image">
+                    <img src="/assets/image/Egholm/Egholm-02.jpg" alt="Route image">
+                </div>
+                <!--Arrows-->
+                <div class="arrow-left">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="arrow-right">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <!--DOTS-->
+                <div class="dots">
+                    <ul>
+                        <li class="dot1"><i class="fas fa-circle"></i></li>
+                        <li class="dot2"><i class="fas fa-circle"></i></li>
+                        <li class="dot3"><i class="fas fa-circle"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
     </main>
 
