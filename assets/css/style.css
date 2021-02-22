@@ -11,6 +11,7 @@ html {
 body {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    background: rgb(252, 248, 248);
 }
 
 img {
@@ -33,7 +34,7 @@ header {
 
 .navigation {
     position: fixed;
-    background-color: cyan;
+    background-color: #141969;
     width: 100%;
 }
 
@@ -87,7 +88,7 @@ header {
     width: 80%;
     height: 100%;
     left: -200%;
-    background-color: lightblue;
+    background-color: #141969;
     z-index: 100;
     position: fixed;
     transition: all .6s;
@@ -107,6 +108,7 @@ header {
     margin-top: 2rem;
     list-style: none;
     font-size: 2rem;
+    color: white;
 }
 
 .nav-menu a {
@@ -141,7 +143,7 @@ header {
     margin: 0 auto;
     position: fixed;
     bottom: 0;
-    background-color: cyan;
+    background-color: #D61C64;
 }
 
 .nav-bottom>*:not(:last-child) {
@@ -154,6 +156,7 @@ header {
     display: grid;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 /* COLLAPSING ELEMENTS */
@@ -224,7 +227,9 @@ figcaption {
 /* .main-page__route--notes {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.30), 0 5px 5px rgba(0, 0, 0, 0.22);
 } */
-
+.main-page__route--notes {
+    background-color: white;
+}
 .main-page__route--notes ul {
     padding: 2px 5px;
     display: grid;
@@ -271,7 +276,7 @@ ROUTES - SHARED CODE FOR ALL INDIVIDUAL 'PAGES'
 .route-menu {
     width: 100%;
     height: 4rem;
-    background-color: aqua;
+    background-color: #D61C64;
     margin-bottom: 5rem;
 }
 
@@ -297,7 +302,7 @@ ROUTES - SHARED CODE FOR ALL INDIVIDUAL 'PAGES'
 
 .route-section-selected {
     color: #fff;
-    background-color: #D61C64;
+    background-color: #4E6959 ;
 }
 
 /* INFO SECTION OF ALL ROUTES */
@@ -515,4 +520,21 @@ ROUTES - SHARED CODE FOR ALL INDIVIDUAL 'PAGES'
 
 .bottom-profile-image img {
     height: 20rem;
+}
+
+footer {
+    width: 100%;
+    background-color: #141969;
+    height: 5rem;
+    margin-bottom: 5rem;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    align-content: center;
+    justify-items: center;
 }

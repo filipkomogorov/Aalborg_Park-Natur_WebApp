@@ -151,4 +151,12 @@
     .hide {
         display: none !important;
     }
+    /*FOOTER*/
+    footer {
+        margin: 0;
+    }
+    .footer-container {
+        width: 96rem;
+        height: 5rem;
+    }
 }
