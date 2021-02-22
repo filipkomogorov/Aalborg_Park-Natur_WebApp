@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aalborg Park&Natur</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/queries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 
@@ -19,7 +20,7 @@
                     <i class="fas fa-user-alt fa-3x"></i>
                 </div>
                 <div class="logo">
-                    <h2>Logo</h2>
+                    <img src="assets/image/logo/logo_white.svg" alt="">
                 </div>
                 <div class="hamburger-menu" id="hamburger-menu">
                     <div class="first-line line"></div>
@@ -31,8 +32,9 @@
                         <li onClick="window.location.reload(); window.scrollTo(0,0)">Home</li>
                         <!-- Refresh code inspired by https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click -->
 
-                        <li>Filter routes</li>
-                        <li>Profile</li>
+                        <li>Filter</li>
+                        <li>Favorites</li>
+                        <li id="profile-btn">Profile</li>
                     </ul>
                 </div>
             </div>
@@ -53,7 +55,7 @@
 
     <main>
         <!-- all content that will be on the landing 'page' -->
-        <section class="main-page" id='main-page'>
+        <section class="main-page control" id='main-page'>
             <div class="main-page__route" id="egholm">
                 <figure>
                     <img src="assets/image/Egholm/fawns.jpg" alt="Egholm image" class="main-page__route--first">
@@ -109,7 +111,7 @@
         <!-- all inidivual routes 'pages' -->
 
         <!-- EGHOLM -->
-        <section class="route-ind hide" id="egholm-ind">
+        <section class="route-ind hide control" id="egholm-ind">
             <!-- top part with name, gallery and options that never changes -->
             <div class="route-one__static-content">
                 <div class="route__title">
@@ -285,7 +287,7 @@
 
         <!-- østerådalen nord -->
 
-        <section class="route-ind hide" id="ostergadenNord-ind">
+        <section class="route-ind hide control" id="ostergadenNord-ind">
             <!-- top part with name, gallery and options that never changes -->
             <div class="route-one__static-content">
                 <div class="route__title">
@@ -461,7 +463,7 @@
 
         <!-- OSTERGADEN SYD -->
 
-        <section class="route-ind hide" id="ostergadenSyd-ind">
+        <section class="route-ind hide control" id="ostergadenSyd-ind">
             <!-- top part with name, gallery and options that never changes -->
             <div class="route-one__static-content">
                 <div class="route__title">
@@ -637,7 +639,7 @@
 
         <!--  Bjergbanestien -->
 
-        <section class="route-ind hide" id="bjergbanestien-ind">
+        <section class="route-ind hide control" id="bjergbanestien-ind">
             <!-- top part with name, gallery and options that never changes -->
             <div class="route-one__static-content">
                 <div class="route__title">
@@ -812,7 +814,7 @@
 
         <!--  Mulbjerge -->
 
-        <section class="route-ind hide" id="mulbjerge-ind">
+        <section class="route-ind hide control" id="mulbjerge-ind">
             <!-- top part with name, gallery and options that never changes -->
             <div class="route-one__static-content">
                 <div class="route__title">
@@ -988,7 +990,7 @@
 
         <!--  Poulstrup -->
 
-        <section class="route-ind hide" id="poulstrup-ind">
+        <section class="route-ind hide control" id="poulstrup-ind">
             <!-- top part with name, gallery and options that never changes -->
             <div class="route-one__static-content">
                 <div class="route__title">
@@ -1162,7 +1164,7 @@
         </section>
 
         <!-- profile page -->
-        <section class="profile hide" id='profile'>
+        <section class="profile hide control" id='profile'>
             <!--Profile picure-->
             <div class="profile-image">
                 <img src="/assets/image/challenge5.jpg">

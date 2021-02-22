@@ -1,0 +1,111 @@
+@media screen and (min-width: 1000px) {
+    .hamburger-menu {
+        display: none;
+    }
+    .nav-top {
+        width: 96rem;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
+    }
+    .profile-icon {
+        display: none;
+    }
+    .logo {
+        grid-column: 1/2;
+    }
+    .nav-menu {
+        display: block;
+        grid-column: 2/3;
+        position: static !important;
+        margin: 0;
+        width: 35rem;
+        height: 5rem;
+        background: none !important;
+    }
+    .nav-menu ul {
+        position: static;
+        margin: 0;
+        padding: 0;
+        height: 5rem;
+        width: 35rem;
+        transform: translateX(0);
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: 1fr;
+        justify-content: end;
+        align-items: center;
+    }
+    .nav-menu ul li {
+        display: inline-block;
+        left: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .nav-menu ul>*:not(:first-child) {
+        margin-left: 2rem;
+    }
+    /* PROFILE */
+    .profile {
+        width: 96rem;
+        margin: 0 auto;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-image {
+        width: 48rem;
+        height: 40rem;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .profile-image img {
+        box-sizing: border-box;
+        margin: 0;
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+    }
+    .profile-picture-routes {
+        width: 40rem;
+        height: 40rem;
+        margin: 0 auto;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .profile-picture-routes .picutre-title {
+        padding: 0;
+    }
+    .profile-picture-routes img {
+        width: 40rem;
+        height: 25rem;
+    }
+    .picture-routes-title {
+        padding: 5px 1.2rem;
+        background-color: rgba(255, 255, 255, .7);
+        bottom: 6rem;
+    }
+    .picture-routes-inside-text {
+        display: none;
+    }
+    .dots {
+        display: none;
+    }
+    .arrow-left, .arrow-right {
+        bottom: 15rem;
+    }
+    .opacity .challenges {
+        width: 48rem;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .bottom-profile-images {
+        width: 48rem;
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+}
