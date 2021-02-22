@@ -1,0 +1,31 @@
+/*WEB VERSION*/
+@media only screen and (min-width:1000px) {
+.main-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 96rem;
+    margin: 0 auto;
+    padding-top:10rem ;
+    align-content: center;
+    justify-items: center;
+}
+.main-page__route {
+    width: 25.1rem;
+    height: auto;
+    
+}
+.main-page__route--notes ul {
+    padding: 2px 5px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(6, auto);
+    grid-column-gap: 3rem;
+}
+.fas {
+    font-size: 2.5rem !important;
+}
+.fab {
+    font-size: 2.5rem !important;
+}
+}
