@@ -15,6 +15,13 @@
     }
     .logo {
         grid-column: 1/2;
+        height: 5rem;
+        display: grid;
+        align-items: center;
+    }
+    .logo img {
+        height: 4rem;
+        width: auto;
     }
     .nav-menu {
         display: block;
@@ -40,12 +47,16 @@
     }
     .nav-menu ul li {
         display: inline-block;
+        text-transform: uppercase;
         left: auto;
         margin: 0;
         padding: 0;
     }
     .nav-menu ul>*:not(:first-child) {
         margin-left: 2rem;
+    }
+    .nav-bottom {
+        display: none;
     }
     /* PROFILE */
     .profile {
