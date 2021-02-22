@@ -1,3 +1,12 @@
+// VARIABLES
+
+const egholmPage = document.querySelector('#egholm-ind');
+const ostergadenNordPage = document.querySelector('#ostergadenNord-ind');
+const ostergadenSydPage = document.querySelector('#ostergadenSyd-ind');
+const bjergbanestienPage = document.querySelector('#bjergbanestien-ind');
+const mulbjergePage = document.querySelector('#mulbjerge-ind');
+const poulstrupPage = document.querySelector('#poulstrup-ind');
+
 
 document.querySelector('#hamburger-menu').addEventListener('click', function () {
     document.querySelector('#nav-menu').classList.toggle('show-nav')
@@ -8,10 +17,24 @@ document.querySelector('#hamburger-menu').addEventListener('click', function () 
 });
 
 document.querySelector('#profile-icon').addEventListener('click', function () {
-    document.querySelector('#main-page').classList.add('hide');
+    hidePages();
     document.querySelector('#profile').classList.replace('hide', 'show');
     window.scrollTo(0, 0);
 });
+
+document.querySelector('#profile-btn').addEventListener('click', function () {
+    hidePages();
+    document.querySelector('#profile').classList.replace('hide', 'show');
+    window.scrollTo(0, 0);
+})
+
+let hidePages = function () {
+    let pages = document.getElementsByClassName('control');
+    for (let i = 0; i < pages.length; i++) {
+        pages[i].classList.add('hide');
+        pages[i].classList.remove('show');
+    }
+}
 
 
 /* CODE FOR LANDING PAGE*/
