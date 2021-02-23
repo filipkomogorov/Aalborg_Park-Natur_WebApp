@@ -203,7 +203,7 @@
         grid-column: 1/3;
         grid-row: 1/2;
         display: grid;
-        grid-template-columns: 46rem 1fr;
+        grid-template-columns: 1fr 46rem;
         grid-template-rows: auto;
         grid-column-gap: 3.5rem;
     }
@@ -228,7 +228,7 @@
     }
     .route-one__info--activities {
         display: grid;
-        grid-template-columns: 46rem 1fr;
+        grid-template-columns: 1fr 46rem;
         grid-template-rows: auto auto auto;
         grid-column-gap: 3.5rem;
         grid-row-gap: 2rem;
@@ -261,6 +261,32 @@
         margin: 0 !important;
         grid-row: 2/3 !important;
         grid-column: 2/3 !important;
+    }
+    .floated {
+        margin-bottom: 5rem;
+    }
+    .floated .route-text {
+        width: 46rem;
+        float: left;
+        margin-right: 3.5rem;
+    }
+    .floated img {
+        margin-top: 0;
+        width: 46rem;
+    }
+    .cards {
+        width: 96rem;
+        margin: 0 auto;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        justify-items: center;
+    }
+    .challenge {
+        width: 20rem;
+        height: 25rem;
+    }
+    .challenge-img {
+        height: 18rem;
     }
     /*FOOTER*/
     .footer-container {
