@@ -381,6 +381,21 @@ ROUTES - SHARED CODE FOR ALL INDIVIDUAL 'PAGES'
     background-position: center;
     background-size: cover;
 }
+.egholm-walk {
+    background-image: url(../image/Egholm/challenge2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.egholm-cycle {
+    background-image: url(../image/Egholm/challenge5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.egholm-hike {
+    background-image: url(../image/Egholm/challenge4.jpg);
+    background-position: center;
+    background-size: cover;
+}
 
 /* PROFILE PAGE */
 
