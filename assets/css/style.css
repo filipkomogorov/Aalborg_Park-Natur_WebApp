@@ -150,7 +150,7 @@ header {
     border-right: 2px solid #fff;
 }
 
-.home, .filter, .favourite {
+.home, .filter-icon, .favourite {
     width: 100%;
     height: 5rem;
     display: grid;
@@ -227,9 +227,11 @@ figcaption {
 /* .main-page__route--notes {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.30), 0 5px 5px rgba(0, 0, 0, 0.22);
 } */
+
 .main-page__route--notes {
     background-color: white;
 }
+
 .main-page__route--notes ul {
     padding: 2px 5px;
     display: grid;
@@ -302,12 +304,12 @@ ROUTES - SHARED CODE FOR ALL INDIVIDUAL 'PAGES'
 
 .route-section-selected {
     color: #fff;
-    background-color: #4E6959 ;
+    background-color: #4E6959;
 }
 
 /* INFO SECTION OF ALL ROUTES */
 
-.route__image-marign img {
+.route__image-margin img {
     margin: 5rem auto;
 }
 
@@ -316,7 +318,12 @@ ROUTES - SHARED CODE FOR ALL INDIVIDUAL 'PAGES'
     margin: 0 auto;
 }
 
-.route-text h2 {
+.event-title {
+    width: 32rem;
+    margin: 0 auto;
+}
+
+.event-title h2 {
     font-size: 2.6rem;
     margin-bottom: 1.5rem;
 }
@@ -525,16 +532,73 @@ ROUTES - SHARED CODE FOR ALL INDIVIDUAL 'PAGES'
 footer {
     width: 100%;
     background-color: #141969;
-    height: 5rem;
+    height: 10rem;
     margin-bottom: 5rem;
 }
+
 .footer-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 5rem;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10rem;
+    width: 32rem;
     margin: 0 auto;
     color: white;
-    align-content: center;
-    justify-items: center;
+    align-items: center;
+}
+
+.footer-adress p {
+    font-size: 1.5rem;
+}
+
+.footer-adress>*:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.footer-logo {
+    justify-self: start;
+}
+
+.footer-adress {
+    justify-self: end;
+}
+
+.footer-logo img {
+    height: 5rem;
+}
+
+.filter {
+    width: 100%;
+    box-sizing: border-box;
+    height: 15rem;
+    margin-top: 5rem;
+    background-color: #D61C64;
+    position: fixed;
+    top: 0;
+    padding: 2rem 3rem;
+    color: #fff;
+}
+
+.filter h3 {
+    font-size: 2.2rem;
+    margin-bottom: 7px;
+}
+
+.filter ul {
+    padding-left: 1rem;
+}
+
+.filter ul li {
+    list-style: none;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.filter span {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+.route-ind__desktop-info {
+    display: none;
 }

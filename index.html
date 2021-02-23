@@ -32,7 +32,7 @@
                         <li onClick="window.location.reload(); window.scrollTo(0,0)">Home</li>
                         <!-- Refresh code inspired by https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click -->
 
-                        <li>Filter</li>
+                        <li id="filter-nav">Filter</li>
                         <li>Favorites</li>
                         <li id="profile-btn">Profile</li>
                     </ul>
@@ -43,7 +43,7 @@
                     <!-- Refresh code inspired by https://stackoverflow.com/questions/29884654/button-that-refreshes-the-page-on-click -->
                     <i class="fas fa-home fa-3x"></i>
                 </div>
-                <div class="filter">
+                <div class="filter-icon" id="filter-btm-nav">
                     <i class="fas fa-filter fa-3x"></i>
                 </div>
                 <div class="favourite">
@@ -150,25 +150,26 @@
             </div>
             <!-- route opitions - active content -->
             <div class="route-one__active-content">
-                <div class="route__info route__image-marign show control-content" id="route-one-info">
-                    <div class="route-one__info--text route-text">
-                        <h2>Title Info</h2>
-                        <p>Some text goes here</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                            quam
-                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                            repudiandae
-                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                            rerum!
-                            Aliquid vitae ab iusto.</p>
+                <div class="route__info route__image-margin show control-content" id="route-one-info">
+                    <div class="route-one__info--text">
+                        <div class="route-text">
+                            <p>Some text goes here</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                                quam
+                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                                repudiandae
+                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                                rerum!
+                                Aliquid vitae ab iusto.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
                     </div>
-                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
+
 
                     <div class="route-one__info--activities">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>Activities</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
                         </div>
                         <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
                         <div class="route-text">
@@ -178,11 +179,17 @@
                         </div>
 
                         <img src="assets/image/Egholm/Egholm-10.jpg" alt="image of Egolm activity">
+                        <div class="route-text thisone">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ab error deserunt odio
+                                nam minima aperiam nobis, commodi perferendis consequatur.</p>
+                        </div>
                     </div>
 
                     <div class="route-one__info--history">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>History</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
                                 deserunt
                                 in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
@@ -196,7 +203,7 @@
                     </div>
                 </div>
 
-                <div class="route__flora route__image-marign hide control-content" id="route-one-flora">
+                <div class="route__flora route__image-margin hide control-content" id="route-one-flora">
                     <div class="route-text">
                         <h2>Title Flora</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -221,7 +228,7 @@
                     </div>
                 </div>
 
-                <div class="route__fauna route__image-marign hide control-content" id="route-one-fauna">
+                <div class="route__fauna route__image-margin hide control-content" id="route-one-fauna">
                     <div class="route-text">
                         <h2>Title Fauna</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -342,27 +349,40 @@
                         </li>
                     </ul>
                 </div>
+                <div class="route-ind__desktop-info">
+                    <ul>
+                        <li class="item-1">Lorem ipsum dolor sit amet consectetur.</li>
+                        <li class="item-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, ut?</li>
+                        <li class="item-3">Lorem, ipsum dolor.</li>
+                        <li class="item-4">Lorem ipsum dolor sit amet.</li>
+                        <li class="item-5">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
             </div>
             <!-- route opitions - active content -->
             <div class="route-one__active-content">
-                <div class="route__info route__image-marign show control-content" id="route-two-info">
-                    <div class="route-one__info--text route-text">
-                        <h2>Title Info</h2>
-                        <p>Some text goes here</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                            quam
-                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                            repudiandae
-                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                            rerum!
-                            Aliquid vitae ab iusto.</p>
+                <div class="route__info route__image-margin show control-content" id="route-two-info">
+
+                    <div class="route-one__info--text">
+                        <div class="route-text">
+                            <p>Some text goes here</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                                quam
+                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                                repudiandae
+                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                                rerum!
+                                Aliquid vitae ab iusto.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
                     </div>
-                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
 
                     <div class="route-one__info--activities">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>Activities</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
                         </div>
                         <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
@@ -376,8 +396,10 @@
                     </div>
 
                     <div class="route-one__info--history">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>History</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
                                 deserunt
                                 in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
@@ -391,7 +413,7 @@
                     </div>
                 </div>
 
-                <div class="route__flora route__image-marign hide control-content" id="route-two-flora">
+                <div class="route__flora route__image-margin hide control-content" id="route-two-flora">
                     <div class="route-text">
                         <h2>Title Flora</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -416,7 +438,7 @@
                     </div>
                 </div>
 
-                <div class="route__fauna route__image-marign hide control-content" id="route-two-fauna">
+                <div class="route__fauna route__image-margin hide control-content" id="route-two-fauna">
                     <div class="route-text">
                         <h2>Title Fauna</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -538,27 +560,40 @@
                         </li>
                     </ul>
                 </div>
+                <div class="route-ind__desktop-info">
+                    <ul>
+                        <li class="item-1">Lorem ipsum dolor sit amet consectetur.</li>
+                        <li class="item-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, ut?</li>
+                        <li class="item-3">Lorem, ipsum dolor.</li>
+                        <li class="item-4">Lorem ipsum dolor sit amet.</li>
+                        <li class="item-5">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
             </div>
             <!-- route opitions - active content -->
             <div class="route-one__active-content">
-                <div class="route__info route__image-marign show control-content" id="route-three-info">
-                    <div class="route-one__info--text route-text">
-                        <h2>Title Info</h2>
-                        <p>Some text goes here</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                            quam
-                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                            repudiandae
-                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                            rerum!
-                            Aliquid vitae ab iusto.</p>
+                <div class="route__info route__image-margin show control-content" id="route-three-info">
+
+                    <div class="route-one__info--text">
+                        <div class="route-text">
+                            <p>Some text goes here</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                                quam
+                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                                repudiandae
+                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                                rerum!
+                                Aliquid vitae ab iusto.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
                     </div>
-                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
 
                     <div class="route-one__info--activities">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>Activities</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
                         </div>
                         <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
@@ -572,8 +607,10 @@
                     </div>
 
                     <div class="route-one__info--history">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>History</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
                                 deserunt
                                 in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
@@ -587,7 +624,7 @@
                     </div>
                 </div>
 
-                <div class="route__flora route__image-marign hide control-content" id="route-three-flora">
+                <div class="route__flora route__image-margin hide control-content" id="route-three-flora">
                     <div class="route-text">
                         <h2>Title Flora</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -612,7 +649,7 @@
                     </div>
                 </div>
 
-                <div class="route__fauna route__image-marign hide control-content" id="route-three-fauna">
+                <div class="route__fauna route__image-margin hide control-content" id="route-three-fauna">
                     <div class="route-text">
                         <h2>Title Fauna</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -733,27 +770,40 @@
                         </li>
                     </ul>
                 </div>
+                <div class="route-ind__desktop-info">
+                    <ul>
+                        <li class="item-1">Lorem ipsum dolor sit amet consectetur.</li>
+                        <li class="item-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, ut?</li>
+                        <li class="item-3">Lorem, ipsum dolor.</li>
+                        <li class="item-4">Lorem ipsum dolor sit amet.</li>
+                        <li class="item-5">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
             </div>
             <!-- route opitions - active content -->
             <div class="route-one__active-content">
-                <div class="route__info route__image-marign show control-content" id="route-four-info">
-                    <div class="route-one__info--text route-text">
-                        <h2>Title Info</h2>
-                        <p>Some text goes here</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                            quam
-                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                            repudiandae
-                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                            rerum!
-                            Aliquid vitae ab iusto.</p>
+                <div class="route__info route__image-margin show control-content" id="route-four-info">
+
+                    <div class="route-one__info--text">
+                        <div class="route-text">
+                            <p>Some text goes here</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                                quam
+                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                                repudiandae
+                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                                rerum!
+                                Aliquid vitae ab iusto.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
                     </div>
-                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
 
                     <div class="route-one__info--activities">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>Activities</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
                         </div>
                         <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
@@ -767,8 +817,10 @@
                     </div>
 
                     <div class="route-one__info--history">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>History</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
                                 deserunt
                                 in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
@@ -782,7 +834,7 @@
                     </div>
                 </div>
 
-                <div class="route__flora route__image-marign hide control-content" id="route-four-flora">
+                <div class="route__flora route__image-margin hide control-content" id="route-four-flora">
                     <div class="route-text">
                         <h2>Title Flora</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -807,7 +859,7 @@
                     </div>
                 </div>
 
-                <div class="route__fauna route__image-marign hide control-content" id="route-four-fauna">
+                <div class="route__fauna route__image-margin hide control-content" id="route-four-fauna">
                     <div class="route-text">
                         <h2>Title Fauna</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -927,27 +979,40 @@
                         </li>
                     </ul>
                 </div>
+                <div class="route-ind__desktop-info">
+                    <ul>
+                        <li class="item-1">Lorem ipsum dolor sit amet consectetur.</li>
+                        <li class="item-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, ut?</li>
+                        <li class="item-3">Lorem, ipsum dolor.</li>
+                        <li class="item-4">Lorem ipsum dolor sit amet.</li>
+                        <li class="item-5">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
             </div>
             <!-- route opitions - active content -->
             <div class="route-one__active-content">
-                <div class="route__info route__image-marign show control-content" id="route-five-info">
-                    <div class="route-one__info--text route-text">
-                        <h2>Title Info</h2>
-                        <p>Some text goes here</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                            quam
-                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                            repudiandae
-                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                            rerum!
-                            Aliquid vitae ab iusto.</p>
+                <div class="route__info route__image-margin show control-content" id="route-five-info">
+
+                    <div class="route-one__info--text">
+                        <div class="route-text">
+                            <p>Some text goes here</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                                quam
+                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                                repudiandae
+                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                                rerum!
+                                Aliquid vitae ab iusto.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
                     </div>
-                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
 
                     <div class="route-one__info--activities">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>Activities</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
                         </div>
                         <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
@@ -961,8 +1026,10 @@
                     </div>
 
                     <div class="route-one__info--history">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>History</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
                                 deserunt
                                 in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
@@ -976,7 +1043,7 @@
                     </div>
                 </div>
 
-                <div class="route__flora route__image-marign hide control-content" id="route-five-flora">
+                <div class="route__flora route__image-margin hide control-content" id="route-five-flora">
                     <div class="route-text">
                         <h2>Title Flora</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -1001,7 +1068,7 @@
                     </div>
                 </div>
 
-                <div class="route__fauna route__image-marign hide control-content" id="route-five-fauna">
+                <div class="route__fauna route__image-margin hide control-content" id="route-five-fauna">
                     <div class="route-text">
                         <h2>Title Fauna</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -1122,27 +1189,40 @@
                         </li>
                     </ul>
                 </div>
+                <div class="route-ind__desktop-info">
+                    <ul>
+                        <li class="item-1">Lorem ipsum dolor sit amet consectetur.</li>
+                        <li class="item-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, ut?</li>
+                        <li class="item-3">Lorem, ipsum dolor.</li>
+                        <li class="item-4">Lorem ipsum dolor sit amet.</li>
+                        <li class="item-5">Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    </ul>
+                </div>
             </div>
             <!-- route opitions - active content -->
             <div class="route-one__active-content">
-                <div class="route__info route__image-marign show control-content" id="route-six-info">
-                    <div class="route-one__info--text route-text">
-                        <h2>Title Info</h2>
-                        <p>Some text goes here</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
-                            quam
-                            expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
-                            repudiandae
-                            possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
-                            rerum!
-                            Aliquid vitae ab iusto.</p>
+                <div class="route__info route__image-margin show control-content" id="route-six-info">
+
+                    <div class="route-one__info--text">
+                        <div class="route-text">
+                            <p>Some text goes here</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quidem, tempore aperiam
+                                quam
+                                expedita aliquid! Modi corrupti totam quisquam aliquam.</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo ex id similique
+                                repudiandae
+                                possimus sint porro? Inventore debitis deleniti accusamus id qui pariatur voluptas culpa
+                                rerum!
+                                Aliquid vitae ab iusto.</p>
+                        </div>
+                        <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
                     </div>
-                    <img src="assets/image/Egholm/Egholm-07.jpg" alt="image of Egholm">
 
                     <div class="route-one__info--activities">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>Activities</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, dicta.</p>
                         </div>
                         <img src="assets/image/Egholm/Egholm-09.jpg" alt="image of Egholm activity">
@@ -1156,8 +1236,10 @@
                     </div>
 
                     <div class="route-one__info--history">
-                        <div class="route-text">
+                        <div class="event-title">
                             <h2>History</h2>
+                        </div>
+                        <div class="route-text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint ad porro
                                 deserunt
                                 in. Cupiditate non id neque quidem ipsum nam officiis, magni, ut rerum ex,
@@ -1171,7 +1253,7 @@
                     </div>
                 </div>
 
-                <div class="route__flora route__image-marign hide control-content" id="route-six-flora">
+                <div class="route__flora route__image-margin hide control-content" id="route-six-flora">
                     <div class="route-text">
                         <h2>Title Flora</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -1196,7 +1278,7 @@
                     </div>
                 </div>
 
-                <div class="route__fauna route__image-marign hide control-content" id="route-six-fauna">
+                <div class="route__fauna route__image-margin hide control-content" id="route-six-fauna">
                     <div class="route-text">
                         <h2>Title Fauna</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ab provident dolor!
@@ -1370,19 +1452,32 @@
             </div>
         </section>
 
+        <section class="filter hide">
+            <div class="filter-content">
+                <h3>Filter by:</h3>
+                <ul>
+                    <li>Lenght</li>
+                    <li>Accesability</li>
+                    <li>Number of Activities</li>
+                </ul>
+                <span id="filter-close"><i class="fas fa-times fa-3x"></i></span>
+            </div>
+        </section>
+
     </main>
 
     <!-- footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-logo">
-                <h3>logo</h3>
+                <h3><img src="assets/image/logo/logo_white.svg" alt=""></h3>
             </div>
+
             <div class="footer-adress">
-                <h3>Aalborg<br>Kommune<br>Boulevarden 13</h3>
-            </div>
-            <div class="footer-adress">
-                <h3>Tel:+45 99313131<br><br>Cvr no.29189420</h3>
+                <p>Aalborg Kommune</p>
+                <p>Boulevarden 13</p>
+                <p>Tel:+45 99313131</p>
+                <p>Cvr no.29189420</p>
             </div>
         </div>
     </footer>

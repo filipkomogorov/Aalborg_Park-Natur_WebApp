@@ -26,6 +26,30 @@ let hidePages = function () {
     }
 }
 
+// FILTER
+let filter = document.querySelector('.filter');
+let filterBtn = document.querySelector('#filter-btm-nav');
+let closeFilter = document.querySelector('#filter-close');
+let filterBtn2 = document.querySelector('#filter-nav');
+
+filterBtn.addEventListener('click', function () {
+    showFilter();
+});
+
+filterBtn2.addEventListener('click', function () {
+    showFilter()
+})
+
+closeFilter.addEventListener('click', function () {
+    filter.classList.add('hide');
+})
+
+let showFilter = function () {
+    filter.classList.toggle('hide');
+}
+
+
+
 
 /* CODE FOR LANDING PAGE*/
 
@@ -338,8 +362,6 @@ poulstrupChlgBtn.addEventListener('click', function () {
     poulstrupChlgBtn.classList.add('route-section-selected');
     poulstrupChlg.classList.replace('hide', 'show');
 });
-
-
 
 
 let subPageInteraction = function () {
