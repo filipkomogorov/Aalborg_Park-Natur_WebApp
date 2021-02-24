@@ -60,6 +60,10 @@
     .nav-bottom {
         display: none;
     }
+    .icon {
+        width: 3rem;
+        height: auto;
+    }
     /* PROFILE */
     .profile {
         width: 96rem;
@@ -117,7 +121,8 @@
         grid-column: 1/2;
     }
     .bottom-profile-images {
-        width: 48rem;
+        width: 40rem;
+        height: 25rem;
         grid-row: 2/3;
         grid-column: 2/3;
     }
